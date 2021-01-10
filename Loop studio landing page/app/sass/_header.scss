@@ -1,0 +1,52 @@
+header {
+  background: url("/images/desktop/image-hero.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+
+  .text-hero {
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    margin-top: 12%;
+    padding: 3rem;
+    font-size: 9rem;
+    color: $white;
+    border: 1px $white solid;
+    width: 60%;
+    span {
+      display: block;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+nav {
+  padding: 2.4rem;
+
+  .links {
+    list-style: none;
+    position: relative;
+    .link {
+      display: inline-block;
+      border-bottom: 0.2px solid transparent;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+
+    .link::after {
+      position: absolute;
+      content: "";
+      display: none;
+      height: 0.2rem;
+      width: 2.5rem;
+      background-color: #fff;
+      margin-top: 0.5rem;
+      transform: translateX(50%);
+    }
+
+    .link:hover::after {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.about {
+  margin-top: 20rem;
+  .container {
+    position: relative;
+  }
+
+  .about__text {
+    position: absolute;
+    right: 16%;
+    top: 40%;
+    width: 45%;
+    height: 70%;
+    background-color: $white;
+    padding: 10rem;
+    text-align: left;
+    color: $very-dark-grey;
+
+    .lead {
+      font-family: "Josefin Sans";
+      font-weight: 300;
+      font-size: 4.4rem;
+      text-transform: uppercase;
+      margin: 1.5rem 0;
+    }
+  }
+}
