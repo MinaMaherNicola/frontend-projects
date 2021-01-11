@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(22, 33, 68);
+  color: #fff;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.burger-holder {
+  margin: 25rem auto;
+  width: 10%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  text-align: center;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .burger {
+    position: relative;
+    height: 0.2rem;
+    width: 2rem;
+    display: block;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .burger::after {
+    content: "";
+    display: block;
+    height: 0.2rem;
+    width: 2rem;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: 0.8rem;
+  }
+
+  .burger::before {
+    content: "";
+    display: block;
+    height: 0.2rem;
+    width: 2rem;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: -0.8rem;
+  }
+
+  input[type="checkbox"]:not(:checked) ~ .bg {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked {
+  }
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  z-index: 100;
+}
