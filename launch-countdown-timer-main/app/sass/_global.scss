@@ -1,0 +1,27 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Red Hat Text", sans-serif;
+  background: url("../../images/bg-stars.svg");
+  background-color: $black-blue;
+  font-size: $font-size;
+  // overflow: hidden;
+}
+
+.container {
+  max-width: $desktop-width;
+  margin: 0 auto;
+  margin-top: 15vh;
+}

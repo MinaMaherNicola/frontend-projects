@@ -1,0 +1,78 @@
+@media (max-width: $mobile-width) {
+  .lead {
+    font-size: 20px;
+  }
+
+  .counter__card {
+    width: 70px;
+    height: 35px;
+    .overlay {
+      height: 39px;
+      border-radius: 10px 10px 0 0;
+    }
+    &-upper,
+    &-lower {
+      height: 100%;
+    }
+
+    .line {
+      top: 39px;
+    }
+    .circle-left {
+      position: absolute;
+      top: 30px;
+      left: -8px;
+      height: $circle-diameter;
+      width: $circle-diameter;
+      border-radius: 100px;
+      background-color: $black-blue;
+    }
+    .circle-right {
+      position: absolute;
+      top: 30px;
+      right: -8px;
+      height: $circle-diameter;
+      width: $circle-diameter;
+      border-radius: 100px;
+      background-color: $black-blue;
+    }
+    &-duaration {
+      &-days,
+      &-hours,
+      &-minutes,
+      &-seconds {
+        position: absolute;
+        top: 38px;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        color: $soft-red;
+        font-size: 44px;
+      }
+    }
+    &-days,
+    &-hours,
+    &-minutes,
+    &-seconds {
+      text-transform: uppercase;
+      color: $gray-blue;
+      margin-top: 20px;
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .hills-bg {
+    margin-top: 361px;
+    text-align: center;
+
+    .container {
+      a {
+        display: inline-block;
+        margin-right: 45%;
+      }
+      a:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+}

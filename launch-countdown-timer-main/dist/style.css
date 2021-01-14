@@ -1,0 +1,201 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Red Hat Text", sans-serif;
+  background: url("../../images/bg-stars.svg");
+  background-color: #191a24;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 15vh;
+}
+
+.lead {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-weight: 700;
+}
+
+.counter-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.counter__card {
+  position: relative;
+  text-align: center;
+  width: 160px;
+  margin: 0 auto;
+}
+.counter__card .overlay {
+  height: 73.5px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 500;
+}
+.counter__card .circle-left {
+  position: absolute;
+  top: 37%;
+  left: -8px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100px;
+  background-color: #191a24;
+}
+.counter__card .circle-right {
+  position: absolute;
+  top: 37%;
+  right: -8px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100px;
+  background-color: #191a24;
+}
+.counter__card .line {
+  position: absolute;
+  top: 41%;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(18, 19, 27, 0.2);
+  box-shadow: 1px 1px 10px black;
+}
+.counter__card-upper, .counter__card-lower {
+  width: 100%;
+  height: 100%;
+  background-color: #343650;
+  height: 70px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 10px 0px #12131b;
+}
+.counter__card-lower {
+  border-radius: 0 0 10px 10px;
+}
+.counter__card-duaration-days, .counter__card-duaration-hours, .counter__card-duaration-minutes, .counter__card-duaration-seconds {
+  position: absolute;
+  top: 41%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  color: #fb6087;
+  font-size: 90px;
+}
+.counter__card-days, .counter__card-hours, .counter__card-minutes, .counter__card-seconds {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #8486a9;
+  margin-top: 20px;
+}
+
+.hills-bg {
+  height: 200px;
+  width: 100%;
+  margin-top: 165px;
+  background: url("/images/pattern-hills.svg");
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+}
+.hills-bg .container {
+  z-index: 100;
+  width: 700px;
+  height: 500px;
+}
+.hills-bg .container a {
+  display: inline-block;
+}
+.hills-bg .container a:not(:last-child) {
+  margin-right: 50px;
+}
+
+@media (max-width: 375px) {
+  .lead {
+    font-size: 20px;
+  }
+
+  .counter__card {
+    width: 70px;
+    height: 35px;
+  }
+  .counter__card .overlay {
+    height: 39px;
+    border-radius: 10px 10px 0 0;
+  }
+  .counter__card-upper, .counter__card-lower {
+    height: 100%;
+  }
+  .counter__card .line {
+    top: 39px;
+  }
+  .counter__card .circle-left {
+    position: absolute;
+    top: 30px;
+    left: -8px;
+    height: 15px;
+    width: 15px;
+    border-radius: 100px;
+    background-color: #191a24;
+  }
+  .counter__card .circle-right {
+    position: absolute;
+    top: 30px;
+    right: -8px;
+    height: 15px;
+    width: 15px;
+    border-radius: 100px;
+    background-color: #191a24;
+  }
+  .counter__card-duaration-days, .counter__card-duaration-hours, .counter__card-duaration-minutes, .counter__card-duaration-seconds {
+    position: absolute;
+    top: 38px;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    color: #fb6087;
+    font-size: 44px;
+  }
+  .counter__card-days, .counter__card-hours, .counter__card-minutes, .counter__card-seconds {
+    text-transform: uppercase;
+    color: #8486a9;
+    margin-top: 20px;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .hills-bg {
+    margin-top: 361px;
+    text-align: center;
+  }
+  .hills-bg .container a {
+    display: inline-block;
+    margin-right: 45%;
+  }
+  .hills-bg .container a:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

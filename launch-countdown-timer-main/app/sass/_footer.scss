@@ -1,0 +1,22 @@
+.hills-bg {
+  height: 200px;
+  width: 100%;
+  margin-top: 165px;
+  background: url("/images/pattern-hills.svg");
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+  // opacity: 0.4;
+  .container {
+    z-index: 100;
+    width: 700px;
+    height: 500px;
+    a {
+      display: inline-block;
+    }
+    a:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
