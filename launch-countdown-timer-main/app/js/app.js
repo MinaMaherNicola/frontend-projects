@@ -48,6 +48,8 @@ const updateTime = (timers) => {
   }
 };
 
-setTimeout(() => {
+updateTime(specifyTime(launchTime));
+
+setInterval(() => {
   updateTime(specifyTime(launchTime));
 }, 1000);
